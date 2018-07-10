@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Hideki Matsuoka" => "matsuoka_hideki@cyberagent.co.jp" }
   s.source       = { :git => "https://github.com/cats-oss/ExtensionProperty.git", :tag => "#{s.version}" }
-  s.source_files = "ExtensionProperty/*.swift"
+  s.source_files = "Sources/ExtensionProperty/*.swift"
   s.requires_arc = true
 
   s.ios.deployment_target = "9.0"
