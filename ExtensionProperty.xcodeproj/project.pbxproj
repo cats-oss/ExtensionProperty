@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		911D1FBF1F83E57000255DFB /* ExtensionProperty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911D1FB51F83E57000255DFB /* ExtensionProperty.framework */; };
 		911D1FC41F83E57000255DFB /* ExtensionPropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911D1FC31F83E57000255DFB /* ExtensionPropertyTests.swift */; };
-		911D1FC61F83E57000255DFB /* ExtensionProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 911D1FB81F83E57000255DFB /* ExtensionProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		911D1FD11F83E58000255DFB /* ExtensionProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911D1FCF1F83E58000255DFB /* ExtensionProperty.swift */; };
-		911D1FD21F83E58000255DFB /* ExtensionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911D1FD01F83E58000255DFB /* ExtensionPropertyKey.swift */; };
-		91C2536A20F3A2E00034BC10 /* ExtensionProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911D1FCF1F83E58000255DFB /* ExtensionProperty.swift */; };
-		91C2536B20F3A2E20034BC10 /* ExtensionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911D1FD01F83E58000255DFB /* ExtensionPropertyKey.swift */; };
-		91C2536D20F3A6030034BC10 /* ExtensionProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 911D1FB81F83E57000255DFB /* ExtensionProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91C2537B20F3A6A10034BC10 /* ExtensionProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 911D1FB81F83E57000255DFB /* ExtensionProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91C2537C20F3A6A70034BC10 /* ExtensionProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911D1FCF1F83E58000255DFB /* ExtensionProperty.swift */; };
-		91C2537D20F3A6A90034BC10 /* ExtensionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911D1FD01F83E58000255DFB /* ExtensionPropertyKey.swift */; };
+		EDFEBDB820F4AF4100B2E2BC /* ExtensionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFEBDB420F4AF3C00B2E2BC /* ExtensionPropertyKey.swift */; };
+		EDFEBDB920F4AF4200B2E2BC /* ExtensionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFEBDB420F4AF3C00B2E2BC /* ExtensionPropertyKey.swift */; };
+		EDFEBDBA20F4AF4200B2E2BC /* ExtensionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFEBDB420F4AF3C00B2E2BC /* ExtensionPropertyKey.swift */; };
+		EDFEBDBB20F4AF4500B2E2BC /* ExtensionProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFEBDB520F4AF3C00B2E2BC /* ExtensionProperty.swift */; };
+		EDFEBDBC20F4AF4600B2E2BC /* ExtensionProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFEBDB520F4AF3C00B2E2BC /* ExtensionProperty.swift */; };
+		EDFEBDBD20F4AF4600B2E2BC /* ExtensionProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFEBDB520F4AF3C00B2E2BC /* ExtensionProperty.swift */; };
+		EDFEBDBE20F4AF4C00B2E2BC /* ExtensionProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = EDFEBDB220F4AF3C00B2E2BC /* ExtensionProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDFEBDBF20F4AF4D00B2E2BC /* ExtensionProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = EDFEBDB220F4AF3C00B2E2BC /* ExtensionProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDFEBDC020F4AF4E00B2E2BC /* ExtensionProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = EDFEBDB220F4AF3C00B2E2BC /* ExtensionProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,15 +32,15 @@
 
 /* Begin PBXFileReference section */
 		911D1FB51F83E57000255DFB /* ExtensionProperty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtensionProperty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		911D1FB81F83E57000255DFB /* ExtensionProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionProperty.h; sourceTree = "<group>"; };
-		911D1FB91F83E57000255DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		911D1FBE1F83E57000255DFB /* ExtensionPropertyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtensionPropertyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		911D1FC31F83E57000255DFB /* ExtensionPropertyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyTests.swift; sourceTree = "<group>"; };
 		911D1FC51F83E57000255DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		911D1FCF1F83E58000255DFB /* ExtensionProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionProperty.swift; sourceTree = "<group>"; };
-		911D1FD01F83E58000255DFB /* ExtensionPropertyKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyKey.swift; sourceTree = "<group>"; };
 		91C2536220F3A2C80034BC10 /* ExtensionProperty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtensionProperty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C2537320F3A6940034BC10 /* ExtensionProperty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtensionProperty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDFEBDB220F4AF3C00B2E2BC /* ExtensionProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionProperty.h; sourceTree = "<group>"; };
+		EDFEBDB420F4AF3C00B2E2BC /* ExtensionPropertyKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyKey.swift; sourceTree = "<group>"; };
+		EDFEBDB520F4AF3C00B2E2BC /* ExtensionProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionProperty.swift; sourceTree = "<group>"; };
+		EDFEBDB720F4AF3C00B2E2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		911D1FAB1F83E57000255DFB = {
 			isa = PBXGroup;
 			children = (
-				911D1FB71F83E57000255DFB /* ExtensionProperty */,
+				EDFEBDB120F4AF3C00B2E2BC /* Sources */,
 				911D1FC21F83E57000255DFB /* ExtensionPropertyTests */,
 				911D1FB61F83E57000255DFB /* Products */,
 			);
@@ -96,17 +96,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		911D1FB71F83E57000255DFB /* ExtensionProperty */ = {
-			isa = PBXGroup;
-			children = (
-				91559EEA2081C98C005C4693 /* Support File */,
-				911D1FB81F83E57000255DFB /* ExtensionProperty.h */,
-				911D1FCF1F83E58000255DFB /* ExtensionProperty.swift */,
-				911D1FD01F83E58000255DFB /* ExtensionPropertyKey.swift */,
-			);
-			path = ExtensionProperty;
-			sourceTree = "<group>";
-		};
 		911D1FC21F83E57000255DFB /* ExtensionPropertyTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,10 +105,29 @@
 			path = ExtensionPropertyTests;
 			sourceTree = "<group>";
 		};
-		91559EEA2081C98C005C4693 /* Support File */ = {
+		EDFEBDB120F4AF3C00B2E2BC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				911D1FB91F83E57000255DFB /* Info.plist */,
+				EDFEBDB220F4AF3C00B2E2BC /* ExtensionProperty.h */,
+				EDFEBDB320F4AF3C00B2E2BC /* ExtensionProperty */,
+				EDFEBDB620F4AF3C00B2E2BC /* Support File */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EDFEBDB320F4AF3C00B2E2BC /* ExtensionProperty */ = {
+			isa = PBXGroup;
+			children = (
+				EDFEBDB420F4AF3C00B2E2BC /* ExtensionPropertyKey.swift */,
+				EDFEBDB520F4AF3C00B2E2BC /* ExtensionProperty.swift */,
+			);
+			path = ExtensionProperty;
+			sourceTree = "<group>";
+		};
+		EDFEBDB620F4AF3C00B2E2BC /* Support File */ = {
+			isa = PBXGroup;
+			children = (
+				EDFEBDB720F4AF3C00B2E2BC /* Info.plist */,
 			);
 			path = "Support File";
 			sourceTree = "<group>";
@@ -131,7 +139,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				911D1FC61F83E57000255DFB /* ExtensionProperty.h in Headers */,
+				EDFEBDBE20F4AF4C00B2E2BC /* ExtensionProperty.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +147,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91C2536D20F3A6030034BC10 /* ExtensionProperty.h in Headers */,
+				EDFEBDBF20F4AF4D00B2E2BC /* ExtensionProperty.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +155,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91C2537B20F3A6A10034BC10 /* ExtensionProperty.h in Headers */,
+				EDFEBDC020F4AF4E00B2E2BC /* ExtensionProperty.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +254,7 @@
 					};
 					91C2536120F3A2C80034BC10 = {
 						CreatedOnToolsVersion = 9.4.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					91C2537220F3A6940034BC10 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -309,8 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				911D1FD21F83E58000255DFB /* ExtensionPropertyKey.swift in Sources */,
-				911D1FD11F83E58000255DFB /* ExtensionProperty.swift in Sources */,
+				EDFEBDBB20F4AF4500B2E2BC /* ExtensionProperty.swift in Sources */,
+				EDFEBDB820F4AF4100B2E2BC /* ExtensionPropertyKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +334,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91C2536A20F3A2E00034BC10 /* ExtensionProperty.swift in Sources */,
-				91C2536B20F3A2E20034BC10 /* ExtensionPropertyKey.swift in Sources */,
+				EDFEBDBC20F4AF4600B2E2BC /* ExtensionProperty.swift in Sources */,
+				EDFEBDB920F4AF4200B2E2BC /* ExtensionPropertyKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,8 +343,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91C2537C20F3A6A70034BC10 /* ExtensionProperty.swift in Sources */,
-				91C2537D20F3A6A90034BC10 /* ExtensionPropertyKey.swift in Sources */,
+				EDFEBDBD20F4AF4600B2E2BC /* ExtensionProperty.swift in Sources */,
+				EDFEBDBA20F4AF4200B2E2BC /* ExtensionPropertyKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +492,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Support File/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -504,6 +513,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Support File/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -551,13 +561,16 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Support File/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -571,13 +584,16 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Support File/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -597,6 +613,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Support File/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -617,6 +634,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Support File/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
