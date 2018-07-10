@@ -82,7 +82,7 @@ If you’re using [Swift Package Manager](https://github.com/apple/swift-package
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/cats-oss/ExtensionProperty", from: "0.1.0")
+    .package(url: "https://github.com/cats-oss/ExtensionProperty", from: "1.0.2")
 ]
 ```
 
