@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "ExtensionProperty"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Attach property via Extension."
   s.homepage     = "https://github.com/cats-oss/ExtensionProperty"
   s.license      = { :type => "MIT", :file => "LICENSE" }
