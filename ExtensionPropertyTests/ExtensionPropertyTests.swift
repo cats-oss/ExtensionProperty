@@ -2,53 +2,84 @@
 //  ExtensionPropertyTests.swift
 //  ExtensionPropertyTests
 //
-//  Created by matsuokah on 2017/10/04.
-//  Copyright © 2017 matsuokah. All rights reserved.
+//  Created by marty-suzuki on 2018/07/11.
+//  Copyright © 2018 CyberAgent, Inc. All rights reserved.
 //
 
 import XCTest
 @testable import ExtensionProperty
 
-// MARK: - Definitions
-protocol Animal { }
+final class ExtensionPropertyTests: XCTestCase {
+    fileprivate final class Cat {}
 
-enum AnimalPropertyKeys: String, ExtensionPropertyKey {
-    case name
+    private var myCat: Cat!
+
+    override func setUp() {
+        super.setUp()
+        myCat = Cat()
+    }
+
+    func testNameDefaultValue() {
+        XCTAssertEqual(myCat.name, Cat.Const.nameDefaultValue)
+    }
+
+    func testSetName() {
+        let name = "Autumn"
+        myCat.name = name
+        XCTAssertEqual(myCat.name, name, "My cat name is \(name)")
+    }
+
+    func testResetName() {
+        let name = "Autumn"
+        myCat.name = name
+        let newName = "Winter"
+        myCat.name = newName
+        XCTAssertEqual(myCat.name, newName, "My cat name is \(newName)")
+    }
+
+    func testAgeDefaultValue() {
+        XCTAssertEqual(myCat.age, Cat.Const.ageDefaultValue)
+    }
+
+    func testSetAge() {
+        let age: Int = 10
+        myCat.age = age
+        XCTAssertEqual(myCat.age, age, "My cat is \(age) years old.")
+    }
+
+    func testResetAge() {
+        let age = 10
+        myCat.age = age
+        let newAge = age + 1
+        myCat.age = newAge
+        XCTAssertEqual(myCat.age, newAge, "My cat is \(newAge) years old.")
+    }
 }
 
-final class Dog: Animal { }
+extension ExtensionPropertyTests.Cat: ExtensionProperty {
+    enum Const {
+        static let name = ExtensionPropertyKey<String>(policy: .copy(.nonatomic))
+        static let age = ExtensionPropertyKey<Int>(policy: .assign)
 
-extension Dog: ExtensionProperty {}
+        static let nameDefaultValue = ""
+        static let ageDefaultValue: Int = 0
+    }
 
-extension Animal where Self: ExtensionProperty {
-    typealias Key = AnimalPropertyKeys
     var name: String {
         get {
-            return getProperty(key: .name, defaultValue: "")
+            return getProperty(key: Const.name, defaultValue: Const.nameDefaultValue)
         }
-
         set {
-            setProperty(key: .name, newValue: newValue)
+            setProperty(key: Const.name, newValue: newValue)
         }
     }
-}
 
-// MARK: - Tests
-class ExtensionPropertyTests: XCTestCase {
-
-    var myDog = Dog()
-
-    func testApplyName() {
-        let name = "Autumn"
-        myDog.name = name
-        XCTAssertEqual(myDog.name, name, "My dog name is \(name)")
-    }
-
-    func testRename() {
-        let name = "Autumn"
-        myDog.name = name
-        let newName = "Winter"
-        myDog.name = newName
-        XCTAssertEqual(myDog.name, newName, "My dog name is \(newName)")
+    var age: Int {
+        get {
+            return getProperty(key: Const.age, defaultValue: Const.ageDefaultValue)
+        }
+        set {
+            setProperty(key: Const.age, newValue: newValue)
+        }
     }
 }

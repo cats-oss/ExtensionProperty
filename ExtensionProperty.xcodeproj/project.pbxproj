@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37C7307020F51EE700B71787 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7306F20F51EE700B71787 /* OptionalType.swift */; };
+		37C7307120F51EE700B71787 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7306F20F51EE700B71787 /* OptionalType.swift */; };
+		37C7307220F51EE700B71787 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7306F20F51EE700B71787 /* OptionalType.swift */; };
+		37C7307420F523BF00B71787 /* ExtensionPropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7307320F523BF00B71787 /* ExtensionPropertyTests.swift */; };
+		37C7307620F52C1700B71787 /* AssociationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7307520F52C1700B71787 /* AssociationPolicy.swift */; };
+		37C7307720F52C1700B71787 /* AssociationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7307520F52C1700B71787 /* AssociationPolicy.swift */; };
+		37C7307820F52C1700B71787 /* AssociationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7307520F52C1700B71787 /* AssociationPolicy.swift */; };
+		37C7307A20F52D3000B71787 /* AssociationPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7307920F52D3000B71787 /* AssociationPolicyTests.swift */; };
 		911D1FBF1F83E57000255DFB /* ExtensionProperty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911D1FB51F83E57000255DFB /* ExtensionProperty.framework */; };
-		911D1FC41F83E57000255DFB /* ExtensionPropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911D1FC31F83E57000255DFB /* ExtensionPropertyTests.swift */; };
+		911D1FC41F83E57000255DFB /* ProtocolExtensionPropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911D1FC31F83E57000255DFB /* ProtocolExtensionPropertyTests.swift */; };
 		EDFEBDB820F4AF4100B2E2BC /* ExtensionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFEBDB420F4AF3C00B2E2BC /* ExtensionPropertyKey.swift */; };
 		EDFEBDB920F4AF4200B2E2BC /* ExtensionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFEBDB420F4AF3C00B2E2BC /* ExtensionPropertyKey.swift */; };
 		EDFEBDBA20F4AF4200B2E2BC /* ExtensionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFEBDB420F4AF3C00B2E2BC /* ExtensionPropertyKey.swift */; };
@@ -31,9 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37C7306F20F51EE700B71787 /* OptionalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalType.swift; sourceTree = "<group>"; };
+		37C7307320F523BF00B71787 /* ExtensionPropertyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyTests.swift; sourceTree = "<group>"; };
+		37C7307520F52C1700B71787 /* AssociationPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociationPolicy.swift; sourceTree = "<group>"; };
+		37C7307920F52D3000B71787 /* AssociationPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociationPolicyTests.swift; sourceTree = "<group>"; };
 		911D1FB51F83E57000255DFB /* ExtensionProperty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtensionProperty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		911D1FBE1F83E57000255DFB /* ExtensionPropertyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtensionPropertyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		911D1FC31F83E57000255DFB /* ExtensionPropertyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyTests.swift; sourceTree = "<group>"; };
+		911D1FC31F83E57000255DFB /* ProtocolExtensionPropertyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolExtensionPropertyTests.swift; sourceTree = "<group>"; };
 		911D1FC51F83E57000255DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91C2536220F3A2C80034BC10 /* ExtensionProperty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtensionProperty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C2537320F3A6940034BC10 /* ExtensionProperty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtensionProperty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +111,9 @@
 		911D1FC21F83E57000255DFB /* ExtensionPropertyTests */ = {
 			isa = PBXGroup;
 			children = (
-				911D1FC31F83E57000255DFB /* ExtensionPropertyTests.swift */,
+				911D1FC31F83E57000255DFB /* ProtocolExtensionPropertyTests.swift */,
+				37C7307320F523BF00B71787 /* ExtensionPropertyTests.swift */,
+				37C7307920F52D3000B71787 /* AssociationPolicyTests.swift */,
 				911D1FC51F83E57000255DFB /* Info.plist */,
 			);
 			path = ExtensionPropertyTests;
@@ -118,8 +132,10 @@
 		EDFEBDB320F4AF3C00B2E2BC /* ExtensionProperty */ = {
 			isa = PBXGroup;
 			children = (
+				37C7307520F52C1700B71787 /* AssociationPolicy.swift */,
 				EDFEBDB420F4AF3C00B2E2BC /* ExtensionPropertyKey.swift */,
 				EDFEBDB520F4AF3C00B2E2BC /* ExtensionProperty.swift */,
+				37C7306F20F51EE700B71787 /* OptionalType.swift */,
 			);
 			path = ExtensionProperty;
 			sourceTree = "<group>";
@@ -242,7 +258,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = matsuokah;
+				ORGANIZATIONNAME = "CyberAgent, Inc.";
 				TargetAttributes = {
 					911D1FB41F83E57000255DFB = {
 						CreatedOnToolsVersion = 9.0;
@@ -317,8 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C7307020F51EE700B71787 /* OptionalType.swift in Sources */,
 				EDFEBDBB20F4AF4500B2E2BC /* ExtensionProperty.swift in Sources */,
 				EDFEBDB820F4AF4100B2E2BC /* ExtensionPropertyKey.swift in Sources */,
+				37C7307620F52C1700B71787 /* AssociationPolicy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +344,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				911D1FC41F83E57000255DFB /* ExtensionPropertyTests.swift in Sources */,
+				37C7307420F523BF00B71787 /* ExtensionPropertyTests.swift in Sources */,
+				911D1FC41F83E57000255DFB /* ProtocolExtensionPropertyTests.swift in Sources */,
+				37C7307A20F52D3000B71787 /* AssociationPolicyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,8 +354,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C7307120F51EE700B71787 /* OptionalType.swift in Sources */,
 				EDFEBDBC20F4AF4600B2E2BC /* ExtensionProperty.swift in Sources */,
 				EDFEBDB920F4AF4200B2E2BC /* ExtensionPropertyKey.swift in Sources */,
+				37C7307720F52C1700B71787 /* AssociationPolicy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,8 +365,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C7307220F51EE700B71787 /* OptionalType.swift in Sources */,
 				EDFEBDBD20F4AF4600B2E2BC /* ExtensionProperty.swift in Sources */,
 				EDFEBDBA20F4AF4200B2E2BC /* ExtensionPropertyKey.swift in Sources */,
+				37C7307820F52C1700B71787 /* AssociationPolicy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,7 +3,7 @@
 //  ExtensionProperty
 //
 //  Created by matsuokah on 2017/10/04.
-//  Copyright © 2017 matsuokah. All rights reserved.
+//  Copyright © 2018 CyberAgent, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

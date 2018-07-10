@@ -3,27 +3,22 @@
 //  ExtensionProeprty
 //
 //  Created by matsuokah on 2017/10/04.
-//  Copyright © 2017 matsuokah. All rights reserved.
+//  Copyright © 2018 CyberAgent, Inc. All rights reserved.
 //
 
-import Foundation
+import ObjectiveC.runtime
 
-// MARK: - ExtensionPropertyKey
-public protocol ExtensionPropertyKey: RawRepresentable {
-    var keyString: String { get }
+open class ExtensionPropertyKeys {
+    fileprivate init () {}
 }
 
-// MARK: - ExtensionPropertyKey
-public extension ExtensionPropertyKey where RawValue == String {
-    var keyString: String {
-        return self.rawValue
-    }
-}
+/// Represents key of objc AssociatedObject
+public final class ExtensionPropertyKey<Value>: ExtensionPropertyKeys {
+    let pointer = UnsafeMutablePointer<UInt8>.allocate(capacity: 1)
+    let policy: objc_AssociationPolicy
 
-// MARK: - ExtensionPropertyKey
-/// Creator UnsafeRawPointer to use key to access associated object
-internal extension ExtensionPropertyKey {
-    var keyPointer: UnsafeRawPointer {
-        return unsafeBitCast(Selector(self.keyString), to: UnsafeRawPointer.self)
+    public init(policy: AssociationPolicy) {
+        self.policy = policy.objcAssociationPolicy
+        super.init()
     }
 }
