@@ -61,14 +61,28 @@ public extension ExtensionProperty {
 }
 
 public extension ExtensionProperty where Self: NSObject {
+
     private func pointer<Value: NSObject>(of keyPath: KeyPath<Self, Value>) -> UnsafeMutableRawPointer {
         return unsafeBitCast(Selector(keyPath._kvcKeyPathString!), to: UnsafeMutableRawPointer.self)
     }
 
+    /// A getter for associate object.
+    /// If propaty was not stored, return nil
+    /// This method only available for NSObject subclass.
+    ///
+    /// - Parameter key: ExtensionPropertyKey<Value>
+    /// - Returns: Value.Wrapped?
     public func getProperty<Value: NSObject & OptionalType>(_ keyPath: KeyPath<Self, Value>) -> Value.Wrapped? {
         return objc_getAssociatedObject(self, pointer(of: keyPath)) as? Value.Wrapped
     }
 
+    /// A getter for associated object.
+    /// This method only available for NSObject subclass.
+    ///
+    /// - Parameters:
+    ///     - key: ExtensionPropertyKey<Value>
+    ///     - defaultValue: defaultValue
+    /// - Returns: Value
     public func getProperty<Value: NSObject>(_ keyPath: KeyPath<Self, Value>, defaultValue: Value, policy: AssociationPolicy) -> Value {
         if let value = objc_getAssociatedObject(self, pointer(of: keyPath)) as? Value {
             return value
@@ -78,6 +92,12 @@ public extension ExtensionProperty where Self: NSObject {
         return defaultValue
     }
 
+    /// A setter for associated object
+    /// This method only available for NSObject subclass.
+    ///
+    /// - Parameters:
+    ///     - key: ExtensionPropertyKey<Value>
+    ///     - newValue: A value for set
     public func setProperty<Value: NSObject>(_ keyPath: KeyPath<Self, Value>, newValue: Value, policy: AssociationPolicy) {
         objc_setAssociatedObject(self, pointer(of: keyPath), newValue, policy.objcAssociationPolicy)
     }

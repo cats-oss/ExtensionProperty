@@ -17,6 +17,7 @@
 		37C7307A20F52D3000B71787 /* AssociationPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7307920F52D3000B71787 /* AssociationPolicyTests.swift */; };
 		911D1FBF1F83E57000255DFB /* ExtensionProperty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911D1FB51F83E57000255DFB /* ExtensionProperty.framework */; };
 		911D1FC41F83E57000255DFB /* ProtocolExtensionPropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911D1FC31F83E57000255DFB /* ProtocolExtensionPropertyTests.swift */; };
+		9D5FF1D920F599C500DD50FB /* NSObjectExtensionPropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5FF1D820F599C500DD50FB /* NSObjectExtensionPropertyTests.swift */; };
 		EDFEBDB820F4AF4100B2E2BC /* ExtensionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFEBDB420F4AF3C00B2E2BC /* ExtensionPropertyKey.swift */; };
 		EDFEBDB920F4AF4200B2E2BC /* ExtensionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFEBDB420F4AF3C00B2E2BC /* ExtensionPropertyKey.swift */; };
 		EDFEBDBA20F4AF4200B2E2BC /* ExtensionPropertyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFEBDB420F4AF3C00B2E2BC /* ExtensionPropertyKey.swift */; };
@@ -49,6 +50,7 @@
 		911D1FC51F83E57000255DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91C2536220F3A2C80034BC10 /* ExtensionProperty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtensionProperty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C2537320F3A6940034BC10 /* ExtensionProperty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtensionProperty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5FF1D820F599C500DD50FB /* NSObjectExtensionPropertyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtensionPropertyTests.swift; sourceTree = "<group>"; };
 		EDFEBDB220F4AF3C00B2E2BC /* ExtensionProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionProperty.h; sourceTree = "<group>"; };
 		EDFEBDB420F4AF3C00B2E2BC /* ExtensionPropertyKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPropertyKey.swift; sourceTree = "<group>"; };
 		EDFEBDB520F4AF3C00B2E2BC /* ExtensionProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionProperty.swift; sourceTree = "<group>"; };
@@ -111,9 +113,10 @@
 		911D1FC21F83E57000255DFB /* ExtensionPropertyTests */ = {
 			isa = PBXGroup;
 			children = (
-				911D1FC31F83E57000255DFB /* ProtocolExtensionPropertyTests.swift */,
-				37C7307320F523BF00B71787 /* ExtensionPropertyTests.swift */,
 				37C7307920F52D3000B71787 /* AssociationPolicyTests.swift */,
+				37C7307320F523BF00B71787 /* ExtensionPropertyTests.swift */,
+				9D5FF1D820F599C500DD50FB /* NSObjectExtensionPropertyTests.swift */,
+				911D1FC31F83E57000255DFB /* ProtocolExtensionPropertyTests.swift */,
 				911D1FC51F83E57000255DFB /* Info.plist */,
 			);
 			path = ExtensionPropertyTests;
@@ -344,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5FF1D920F599C500DD50FB /* NSObjectExtensionPropertyTests.swift in Sources */,
 				37C7307420F523BF00B71787 /* ExtensionPropertyTests.swift in Sources */,
 				911D1FC41F83E57000255DFB /* ProtocolExtensionPropertyTests.swift in Sources */,
 				37C7307A20F52D3000B71787 /* AssociationPolicyTests.swift in Sources */,
